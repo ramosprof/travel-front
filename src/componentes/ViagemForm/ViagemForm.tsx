@@ -52,7 +52,7 @@ export default function ViagemForm({ viagem }: Props) {
         <h1>
         {viagem
             ? "Editar Viagem"
-            : "Novo Viagem"}
+            : "Nova Viagem"}
         </h1>
         <div className="form-input">
             <input

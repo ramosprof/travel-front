@@ -44,8 +44,8 @@ export default function LoginForm()
 
         <form onSubmit={handleSubmit} className="login-form ">
             <Image 
-              src="/logo-tmdb.svg"
-              alt="Logo TMDB"
+              src="/LogoTravel.png"
+              alt="Logo travel"
               width={200}
               height={40}
               className="logo-img"

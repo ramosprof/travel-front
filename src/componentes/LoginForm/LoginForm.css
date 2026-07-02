@@ -14,11 +14,19 @@
   gap: 1.25rem;
 }
 
-.logo-img{
+/*.logo-img{
     width: 100%;
     display: block;
     margin-bottom: 1rem;
 
+}*/
+
+.logo-img{
+    display: block;
+    margin: 0 auto 25px auto;
+    width: auto;
+    height: auto;
+    object-fit: contain;
 }
 
 .div-input {

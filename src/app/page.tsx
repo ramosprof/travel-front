@@ -24,8 +24,8 @@ export default async function Home() {
     <main className={styles.home}>
       <header className={styles.homeHeader}>
           <div>
-              <h1> 🎬 Viagens</h1>
-              <p>Gerencie seus viagens</p>
+              <h1> ✈️ Viagens</h1>
+              <p>Gerencie suas viagens</p>
           </div>
 
           <Link href="/viagens/criar" className={styles.btnAdd}>

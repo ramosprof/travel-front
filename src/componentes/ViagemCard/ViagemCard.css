@@ -1,35 +1,37 @@
 .card {
   background: white;
   border-radius: 12px;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
 
-  box-shadow:
-    0 0.1rem 0.5rem rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.08);
 
-  transition:
-    transform 0.2s ease,
-    box-shadow 0.2s ease;
+  transition: transform 0.2s ease,
+              box-shadow 0.2s ease;
 }
 
 .card:hover {
-  transform: translateY(-2px);
-  box-shadow:
-    0 0.5rem 1.1rem rgba(0, 0, 0, 0.12);
+  transform: translateY(-4px);
+  box-shadow: 0 0.5rem 1.1rem rgba(0, 0, 0, 0.15);
 }
 
 .card-img {
   width: 100%;
-  aspect-ratio: 2 / 3;
+  height: 220px;          /* altura fixa */
+  object-fit: cover;      /* corta mantendo a proporção */
   display: block;
-  object-fit: cover;
+  transition: transform .3s ease;
+}
+
+.card:hover .card-img {
+  transform: scale(1.05);
 }
 
 .card h2 {
-  font-size: 1rem;
+  font-size: 1.1rem;
   padding: 1rem 1rem 0.25rem;
   line-height: 1.4;
-  min-height: 3rem;
 }
 
 .card p {
@@ -47,23 +49,17 @@
 
 .btn-acoes a {
   flex: 1;
-
   text-align: center;
-
   text-decoration: none;
-
   background: #0a8a01;
   color: white;
-
   padding: 0.6rem;
-
   border-radius: 6px;
-
   transition: opacity 0.2s;
 }
 
 .btn-acoes a:hover {
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 .btn-acoes button {
@@ -74,8 +70,9 @@
   color: white;
   border-radius: 6px;
   padding: 0.6rem;
+  transition: opacity 0.2s;
 }
 
-.btn-acoes button:hover{
-  opacity: 0.5;
+.btn-acoes button:hover {
+  opacity: 0.8;
 }
