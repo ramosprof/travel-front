@@ -8,6 +8,7 @@ import {
   createViagens,
   updateViagem,
 } from "@/services/viagem.services"
+import { validarDestino } from "@/services/destino.services";
 
 interface Props {
   viagem?: Viagem;
@@ -30,6 +31,19 @@ export default function ViagemForm({ viagem }: Props) {
    
     async function handleSubmit( e: React.SyntheticEvent) {
         e.preventDefault();
+
+        const destinoValido = await validarDestino(titulo);
+
+        if (!destinoValido) {
+        alert("Destino não encontrado. Verifique o nome digitado.");
+        return;
+        }
+
+        if (!imagem.trim()) {
+        alert("Informe a URL da imagem.");
+        return;
+        }
+
 
         const payload = {
             titulo,
@@ -73,13 +87,16 @@ export default function ViagemForm({ viagem }: Props) {
         />
         </div>
         <div className="form-input">
-            <input
-                type="number"
-                defaultValue={nota}
-                onChange={(e) =>
-                setNota(Number(e.target.value))
-                }
-            />
+            <select
+                value={nota}
+                onChange={(e) => setNota(Number(e.target.value))}
+            >
+            {[...Array(11)].map((_, i) => (
+                <option key={i} value={i}>
+                    {i}
+                </option>
+             ))}
+            </select>
         </div>
         <button type="submit">
             Salvar
