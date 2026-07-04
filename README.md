@@ -160,25 +160,25 @@ A aplicação será iniciada em:
 
 ## Tela de Login
 
-     ![Tela de Login](./screenshots/TelaLogin.png)
+![Tela de Login](./screenshots/TelaLogin.png)
 
 ---
 
 ## Página Principal
 
-     ![Página Principal](./screenshots/TelaPrincipal.png)
+![Página Principal](./screenshots/TelaPrincipal.png)
 
 ---
 
 ## Cadastro de Viagem
 
-     ![Cadastro de Viagem](./screenshots/NovaViagem.png)
+![Cadastro de Viagem](./screenshots/NovaViagem.png)
 
 ---
 
 ## Consulta de Clima
 
-     ![Consulta de Clima](./screenshots/SideBar.png)
+![Consulta de Clima](./screenshots/SideBar.png)
 
 
 ---
@@ -190,8 +190,8 @@ A aplicação será iniciada em:
 
 GitHub:
 
-     https://github.com/ramosprof
-     https://github.com/Phpfcampos
+https://github.com/ramosprof
+https://github.com/Phpfcampos
 
 ---
 
