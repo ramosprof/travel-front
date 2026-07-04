@@ -176,7 +176,7 @@ A aplicação será iniciada em:
 
 ---
 
-## Cadastro de Viagem
+## Validação do Destino
 
 ![APi Validação](./screenshots/ApiValidacao.png)
 
