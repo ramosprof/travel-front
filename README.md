@@ -176,6 +176,12 @@ A aplicação será iniciada em:
 
 ---
 
+## Cadastro de Viagem
+
+![APi Validação](./screenshots/ApiValidacao.png)
+
+---
+
 ## Consulta de Clima
 
 ![Consulta de Clima](./screenshots/SideBar.png)
@@ -185,13 +191,10 @@ A aplicação será iniciada em:
 
 # Integrantes
 
-**Rafael Ramos da Silva**
-**Pedro Henrique Campos**
-
-GitHub:
-
-https://github.com/ramosprof
-https://github.com/Phpfcampos
+| Integrante | GitHub |
+|------------|--------|
+| Rafael Ramos da Silva | [@ramosprof](https://github.com/ramosprof) |
+| Pedro Henrique Campos | [@Phpfcampos](https://github.com/Phpfcampos) |
 
 ---
 
