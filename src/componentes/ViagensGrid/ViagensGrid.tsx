@@ -9,9 +9,12 @@ import '@/componentes/ViagensGrid/ViagensGrid.css'
 
 interface Props {
   viagens: Viagem[];
+  viagemSelecionada?: Viagem | null;
+  onSelectViagem?: (viagem: Viagem) => void;
+  
 }
 
-export default function ViagemGrid({ viagens }: Props) {
+export default function ViagemGrid({ viagens, viagemSelecionada, onSelectViagem }: Props) {
 
   const router = useRouter();
 
@@ -24,7 +27,9 @@ export default function ViagemGrid({ viagens }: Props) {
     return <ViagemCard 
         key={f.id}
         viagem={f}
+        selecionado={viagemSelecionada?.id === f.id}
         onDelete={handleDelete}
+        onSelect={onSelectViagem}
     />
   }); 
 

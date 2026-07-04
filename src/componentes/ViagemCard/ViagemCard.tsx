@@ -7,15 +7,20 @@ import Image from "next/image";
 
 interface ViagemCardProps {
   viagem: Viagem;
+  selecionado?: boolean;
   onDelete: (id: number) => void;
+  onSelect?: (viagem: Viagem) => void;
 }
 
-export default function ViagemCard({ viagem, onDelete}: ViagemCardProps) {
+export default function ViagemCard({ viagem, selecionado, onDelete, onSelect,}: ViagemCardProps) {
   return (
-    <div className="card">
+    <div
+    className={`card ${selecionado ? "card-selecionado" : ""}`}
+    onClick={() => onSelect?.(viagem)}
+    >
 
       <Image
-        src={viagem.imagem}
+        src={viagem.imagem || "/header-bg.png"}
         alt={viagem.titulo} 
         width={300}
         height={450}
@@ -27,13 +32,17 @@ export default function ViagemCard({ viagem, onDelete}: ViagemCardProps) {
       <p>⭐ {viagem.nota}</p>
 
       <div className="btn-acoes">
+
         <Link href={`/viagens/${viagem.id}/editar`}>
           Editar
         </Link>
 
-        <button onClick={() => onDelete?.(viagem.id)}>
+        <button onClick={(e) => {e.stopPropagation();
+                                onDelete?.(viagem.id)}}>
           Excluir
         </button>
+
+        
       </div>
     </div>
   );

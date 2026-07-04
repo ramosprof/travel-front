@@ -4,6 +4,7 @@ import Link from "next/link";
 import styles from '@/app/page.module.css';
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
+import HomeClient from "@/componentes/HomeClient/HomeClient";
 
 
 export default async function Home() {
@@ -32,7 +33,8 @@ export default async function Home() {
             + Adicionar Viagem
           </Link>
       </header>
-      <ViagemGrid viagens={viagens} />
+      
+      <HomeClient viagens={viagens} />
     </main>
   );
 }

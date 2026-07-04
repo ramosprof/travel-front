@@ -1,0 +1,46 @@
+.weather-sidebar {
+  position: fixed;
+  left: 24px;
+  top: 150px;
+  width: 190px;
+  z-index: 20;
+
+  background: linear-gradient(135deg, #dff6ff, #ffffff);
+  border-radius: 18px;
+  padding: 1rem;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,.2);
+
+  transition: transform .5s ease, opacity .5s ease;
+}
+
+.weather-card {
+  background: rgba(255,255,255,.82);
+  border-radius: 14px;
+  padding: 1.2rem;
+  min-height: 240px;
+}
+
+.weather-sidebar h2 {
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #0548ae;
+}
+
+.weather-card h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.weather-card p {
+  margin: .7rem 0;
+  font-size: .95rem;
+}
+
+.weather-card small {
+  display: block;
+  margin-top: 1rem;
+  text-align: center;
+  color: #555;
+}
