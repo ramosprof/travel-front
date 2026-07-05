@@ -200,6 +200,6 @@ A aplicação será iniciada em:
 
 # Licença
 
-Projeto desenvolvido para fins acadêmicos na disciplina de Desenvolvimento Web.
+Projeto desenvolvido para fins acadêmicos na disciplina de Programação Web XDES03.
 
 
